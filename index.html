@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Drawer</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="own-container">
+		<h1>Simple&nbsp;Drawer&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-paint-brush" aria-hidden="true"></i></h1>
+		<div id="drawer" class="row">
+			<div class="sidebar col-md-2">
+				<div class="colors">
+					<div data-color="#000" class="current"></div>
+					<div data-color="#fff"></div>
+					<div data-color="#848284"></div>
+					<div data-color="#c4c2c4"></div>
+					<div data-color="#840204"></div>
+					<div data-color="#fc0204"></div>
+					<div data-color="#848204"></div>
+					<div data-color="#fcfe04"></div>
+					<div data-color="#048204"></div>
+					<div data-color="#04fe04"></div>
+					<div data-color="#048284"></div>
+					<div data-color="#04fefc"></div>
+					<div data-color="#040284"></div>
+					<div data-color="#0402fc"></div>
+					<div data-color="#840284"></div>
+					<div data-color="#fc02fc"></div>
+					<div data-color="#848244"></div>
+					<div data-color="#fcfe84"></div>
+					<div data-color="#044244"></div>
+					<div data-color="#04fe84"></div>
+					<div data-color="#0582fc"></div>
+					<div data-color="#84fefc"></div>
+					<div data-color="#044284"></div>
+					<div data-color="#8482fc"></div>
+					<div data-color="#8402fc"></div>
+					<div data-color="#fc0284"></div>
+					<div data-color="#844204"></div>
+					<div data-color="#fc8244"></div>
+				</div>
+				<div class="tools">
+					<div data-tool="brush" class="current"></div>
+					<div data-tool="rubber"></div>
+				</div>
+				<label>Your pen's size</label>
+				<input type="range" min="1" max="20" step="1" value="1">
+				<output>Current size: <strong>1</strong></output>
+
+				<button class="btn btn-danger" id="clear">Clear</button>
+				<button class="btn btn-primary" id="save" data-toggle="modal" data-target="#myModal">Save</button>
+			</div>
+
+			<div class="canvas col-md-10">
+				<canvas></canvas>
+			</div>
+		</div>
+		<!-- Modal -->
+		<div id="myModal" class="modal fade" role="dialog">
+			<div class="modal-dialog modal-lg">
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Just click RMB and save the file</h4>
+					</div>
+					<div class="modal-body">test</div>				
+				</div>
+			</div>
+		</div>
+		<!-- end of modal -->
+		<footer>Code&nbsp;:&nbsp;&nbsp;Rafał&nbsp;Borek</footer>
+	</div>
+	
+	<script type="text/javascript" src="jquery-2.2.3.min.js"></script>
+	<script type="text/javascript" src="bootstrap/bootstrap.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,200 @@
+@font-face {
+	font-family: 'BebasNeue';
+	src: url('../fonts/bebas/BebasNeue_Regular.otf') format('opentype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'BebasNeueBold';
+	src: url('../fonts/bebas/BebasNeue_Bold.otf') format('opentype'); 
+	font-weight: bold;
+	font-style: normal;
+}
+
+
+html, body {
+	height: 100%;
+}
+
+.own-container {
+	height: 100%;
+	background-color: #14B3CC;
+	padding: 50px 5% 0 5%;
+	position: relative;
+}
+
+.own-container h1 {
+	margin: 0;
+	margin-left: 6%;
+	color: white;
+	font-family: BebasNeueBold;
+	font-size: 50px;
+}
+
+#drawer {
+	margin-top: 15px;
+	background-color: #2098d1;
+	height: 75%;
+}
+
+#drawer .sidebar {
+	box-sizing: border-box;
+	padding: 10px;
+}
+
+#drawer > div {
+	padding: 0;
+}
+
+#drawer > div .colors {
+	position: relative;
+	width: 44px;
+}
+
+.current {
+	-webkit-box-shadow: inset 1px 1px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset 1px 1px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: inset 1px 1px 5px 0px rgba(0,0,0,0.75);
+}
+
+
+#drawer > div .colors > div {
+	float: left;
+	background-color: blue;
+	width: 20px;
+	height: 20px;
+	margin: 0 0 3px 0;
+	cursor: pointer;
+}
+
+#drawer > div .colors > div:nth-child(odd) {
+	margin-right: 3px;
+}
+
+#drawer .tools {
+	margin-left: 60px;
+}
+
+#drawer .tools > div {
+	background-color: white;
+	width: 20px;
+	height: 20px;
+	margin-bottom: 3px;
+	cursor: pointer;
+}
+
+#drawer > div label {
+	width: 100%;
+	margin-top: 15px;
+	color: white;
+}
+
+#drawer > div output {
+	margin-bottom: 10px;
+	color: white;
+}
+
+#drawer .canvas {
+	width: 83.3%;
+	height: 100%;
+	background-color: white;
+}
+
+canvas {
+	border: 1px solid white;
+	background-color: white;
+	cursor: url(../icons/brush.png) 0 20, auto;
+}
+
+.modal-dialog .modal-content .modal-header h4 {
+	font-family: BebasNeueBold;
+	font-size: 21px;
+	color: #2098d1;
+	margin: 0;
+}
+
+.modal-dialog .modal-content .modal-body {
+	padding: 0;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	border-top: 1px solid white;
+	color:white;
+	font-family: BebasNeue;
+	font-size: 19px;
+	padding: 1px 0;
+	width: 90%;
+}
+
+@media (max-width: 1400px) {
+	.own-container {
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+}
+
+@media (max-width: 991px) {
+	.own-container h1 {
+		font-size: 30px;
+	}
+
+	#drawer {
+		margin-top: 0;
+		
+	}
+	
+	.own-container {
+		padding-top: 10px;
+	}
+	
+	#drawer > div .colors {
+		width: 322px;
+	}
+	
+	#drawer > div .colors > div:nth-child(even) {
+		margin-right: 3px;
+	}
+	
+	#drawer .tools {
+		margin-top: 46px;
+		margin-left: 0;		
+	}
+	
+	#drawer .tools > div {
+		float: left;
+	}
+	
+	#drawer .tools > div:first-child {
+		margin-right: 3px;
+	}
+	
+	#drawer > div input {
+		width: 300px;
+	}
+	
+	#drawer .canvas {
+		width: 100%;
+		height: 480px;
+	}
+}
+
+@media (max-width: 558px) {
+	#drawer {
+		width: 100%;
+		margin:0;
+	}	
+}
+
+@media (max-width: 364px) {
+	#drawer > div .colors {
+		width: 230px;
+	}
+	
+	#drawer > div input {
+		width: 95%;
+	}
+}
