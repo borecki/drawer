@@ -15,6 +15,7 @@
 
 html, body {
 	height: 100%;
+	background-color: #14B3CC;
 }
 
 .own-container {
@@ -49,7 +50,7 @@ html, body {
 
 #drawer > div .colors {
 	position: relative;
-	width: 44px;
+	width: 88px;
 }
 
 .current {
@@ -73,7 +74,7 @@ html, body {
 }
 
 #drawer .tools {
-	margin-left: 60px;
+	margin-top: 163px;
 }
 
 #drawer .tools > div {
@@ -82,6 +83,11 @@ html, body {
 	height: 20px;
 	margin-bottom: 3px;
 	cursor: pointer;
+	float: left;
+}
+
+#drawer .tools > div:first-child {
+	margin-right: 3px;
 }
 
 #drawer > div label {
@@ -128,6 +134,7 @@ footer {
 	font-size: 19px;
 	padding: 1px 0;
 	width: 90%;
+	left: 5%;
 }
 
 @media (max-width: 1400px) {
@@ -164,14 +171,6 @@ footer {
 		margin-left: 0;		
 	}
 	
-	#drawer .tools > div {
-		float: left;
-	}
-	
-	#drawer .tools > div:first-child {
-		margin-right: 3px;
-	}
-	
 	#drawer > div input {
 		width: 300px;
 	}
@@ -179,6 +178,14 @@ footer {
 	#drawer .canvas {
 		width: 100%;
 		height: 480px;
+	}
+	
+	footer {
+		position: relative;
+		background-color: #14B3CC;
+		width: 100%;
+		left: 0;
+		border: none;
 	}
 }
 
